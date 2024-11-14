@@ -1,0 +1,55 @@
+:root {
+    --white:#FAFAFA;
+    --cyan-600: #4D96A9;
+    --cyan-300: #8FE3F9;
+    --purple-600: #855FB1;
+    --purple-300: #D9B8FF;
+    --slate-900: #28283D;
+    --slate-600: #87879D;
+    --slate-300: #D1D1DF;
+    --spacing-50: 0.25rem;
+    --spacing-100: 0.5rem;
+    --spacing-200: 1rem;
+    --spacing-225: 1.125rem;
+    --spacing-300: 1.5rem;
+    --spacing-400: 2rem;
+    --spacing-500: 2.5rem;
+    --spacing-700: 3.5rem;
+    --spacing-800: 4rem;
+    --spacing-900: 4.5rem;
+    --spacing-1000: 5rem;
+    --spacing-1400: 7rem;
+    --font-medium:500;
+    --font-black:900;
+}
+
+.text-1 {
+    font-size: var(--spacing-800);
+    font-weight: var(--font-black);
+    line-height: 110%;
+    letter-spacing: 0;
+}
+.text-2 {
+    font-size: var(--spacing-500);
+    font-weight: var(--font-black);
+    line-height: 110%;
+    letter-spacing: 0;
+}
+.text-3 {
+    font-size: var(--spacing-200);
+    font-weight: var(--font-black);
+    line-height: 110%;
+    letter-spacing: var(--spacing-50);
+}
+.text-4 {
+    font-size: var(--spacing-225);
+    font-weight: var(--font-medium);
+    line-height: 110%;
+    letter-spacing: 0;
+}
+.text-5 {
+    font-size: var(--spacing-200);
+    font-weight: var(--font-black);
+    line-height: 150%;
+    letter-spacing: 0;
+}
