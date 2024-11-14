@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
 :root {
     --white:#FAFAFA;
     --cyan-600: #4D96A9;
@@ -51,5 +53,43 @@
     font-size: var(--spacing-200);
     font-weight: var(--font-black);
     line-height: 150%;
-    letter-spacing: 0;
+    letter-spacing: 0px;
 }
+
+.btn {
+    padding: var(--spacing-200) var(--spacing-500);
+    text-decoration: none;
+    color: var(--white);
+    border-radius: 29px;
+}
+
+.btn-blue {
+    background-color: var(--cyan-600);
+}
+
+.btn-blue:hover {
+    background-color: #71C0D4;
+}
+
+.btn-blue span {
+    color: var(--cyan-300);
+    margin-inline-start: var(--spacing-50);
+}
+
+.btn-purple {
+    background-color: var(--purple-600);
+}
+
+.btn-purple:hover {
+    background-color: #B18BDD;
+}
+
+.btn-purple span {
+    color: var(--purple-300);
+    margin-inline-start: var(--spacing-50);
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+}
+
