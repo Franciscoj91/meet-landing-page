@@ -1,95 +1,227 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 
 :root {
-    --white:#FAFAFA;
-    --cyan-600: #4D96A9;
-    --cyan-300: #8FE3F9;
-    --purple-600: #855FB1;
-    --purple-300: #D9B8FF;
-    --slate-900: #28283D;
-    --slate-600: #87879D;
-    --slate-300: #D1D1DF;
-    --spacing-50: 0.25rem;
-    --spacing-100: 0.5rem;
-    --spacing-200: 1rem;
-    --spacing-225: 1.125rem;
-    --spacing-300: 1.5rem;
-    --spacing-400: 2rem;
-    --spacing-500: 2.5rem;
-    --spacing-700: 3.5rem;
-    --spacing-800: 4rem;
-    --spacing-900: 4.5rem;
-    --spacing-1000: 5rem;
-    --spacing-1400: 7rem;
-    --font-medium:500;
-    --font-black:900;
+  --white: #fafafa;
+  --cyan-600: #4d96a9;
+  --cyan-300: #8fe3f9;
+  --purple-600: #855fb1;
+  --purple-300: #d9b8ff;
+  --slate-900: #28283d;
+  --slate-600: #87879d;
+  --slate-300: #d1d1df;
+  --spacing-50: 0.25rem;
+  --spacing-100: 0.5rem;
+  --spacing-200: 1rem;
+  --spacing-225: 1.125rem;
+  --spacing-300: 1.5rem;
+  --spacing-400: 2rem;
+  --spacing-500: 2.5rem;
+  --spacing-600: 3rem;
+  --spacing-700: 3.5rem;
+  --spacing-800: 4rem;
+  --spacing-900: 4.5rem;
+  --spacing-1000: 5rem;
+  --spacing-1400: 7rem;
+  --font-medium: 500;
+  --font-black: 900;
 }
 
-.text-1 {
-    font-size: var(--spacing-800);
-    font-weight: var(--font-black);
-    line-height: 110%;
-    letter-spacing: 0;
-}
-.text-2 {
-    font-size: var(--spacing-500);
-    font-weight: var(--font-black);
-    line-height: 110%;
-    letter-spacing: 0;
-}
-.text-3 {
-    font-size: var(--spacing-200);
-    font-weight: var(--font-black);
-    line-height: 110%;
-    letter-spacing: var(--spacing-50);
-}
-.text-4 {
-    font-size: var(--spacing-225);
-    font-weight: var(--font-medium);
-    line-height: 110%;
-    letter-spacing: 0;
-}
-.text-5 {
-    font-size: var(--spacing-200);
-    font-weight: var(--font-black);
-    line-height: 150%;
-    letter-spacing: 0px;
-}
-
-.btn {
-    padding: var(--spacing-200) var(--spacing-500);
-    text-decoration: none;
-    color: var(--white);
-    border-radius: 29px;
-}
-
-.btn-blue {
-    background-color: var(--cyan-600);
-}
-
-.btn-blue:hover {
-    background-color: #71C0D4;
-}
-
-.btn-blue span {
-    color: var(--cyan-300);
-    margin-inline-start: var(--spacing-50);
-}
-
-.btn-purple {
-    background-color: var(--purple-600);
-}
-
-.btn-purple:hover {
-    background-color: #B18BDD;
-}
-
-.btn-purple span {
-    color: var(--purple-300);
-    margin-inline-start: var(--spacing-50);
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: "Red Hat Display", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
+h1 {
+  color: var(--slate-900);
+}
+
+.text-1 {
+  font-size: clamp(
+    var(--spacing-500),
+    1.9718rem + 2.2535vw,
+    var(--spacing-800)
+  );
+  font-weight: var(--font-black);
+  line-height: 110%;
+  letter-spacing: 0;
+}
+.text-2 {
+  font-size: var(--spacing-500);
+  font-weight: var(--font-black);
+  line-height: 110%;
+  letter-spacing: 0;
+}
+.text-3 {
+  font-size: var(--spacing-200);
+  font-weight: var(--font-black);
+  line-height: 110%;
+  letter-spacing: var(--spacing-50);
+}
+.text-4 {
+  font-size: clamp(var(--spacing-200), 0.956rem + 0.1878vw, var(--spacing-225));
+  font-weight: var(--font-medium);
+  line-height: 110%;
+  letter-spacing: 0;
+}
+.text-5 {
+  font-size: var(--spacing-200);
+  font-weight: var(--font-black);
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+.btn {
+  padding: var(--spacing-200) var(--spacing-500);
+  text-decoration: none;
+  color: var(--white);
+  border-radius: 29px;
+}
+
+.btn-blue {
+  background-color: var(--cyan-600);
+}
+
+.btn-blue:hover {
+  background-color: #71c0d4;
+}
+
+.btn-blue span {
+  color: var(--cyan-300);
+  margin-inline-start: var(--spacing-50);
+}
+
+.btn-purple {
+  background-color: var(--purple-600);
+}
+
+.btn-purple:hover {
+  background-color: #b18bdd;
+}
+
+.btn-purple span {
+  color: var(--purple-300);
+  margin-inline-start: var(--spacing-50);
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--white);
+  color: var(--slate-600);
+}
+
+.logo-section {
+  display: flex;
+  justify-content: center;
+  padding: 48px var(--spacing-1000) 0;
+}
+
+.hero-section {
+  padding: var(--spacing-800) 0 var(--spacing-400);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-600);
+}
+
+.hero-info h1 {
+  width: 11ch;
+  text-wrap: balance;
+}
+
+.hero-info p {
+  width: 28.4ch;
+}
+
+.hero-image {
+  background-image: url("../images/tablet/image-hero.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 10rem;
+}
+
+.hero-image-right {
+  display: none;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-300);
+}
+
+.hero-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-200);
+}
+
+@media (min-width: 48rem) {
+  .hero-section {
+    gap: var(--spacing-900);
+  }
+
+  .hero-image {
+    height: 18.938rem;
+  }
+
+  .hero-btns {
+    flex-direction: row;
+  }
+
+  .hero-info p {
+    width: 39.9ch;
+  }
+}
+
+@media (min-width: 75rem) {
+  .logo-section {
+    padding-top: var(--spacing-1000);
+  }
+
+  .hero-section {
+    flex-direction: row;
+    padding: var(--spacing-800) 10rem;
+    gap: var(--spacing-400);
+  }
+
+  .hero-image {
+    background-image: url('../images/desktop/image-hero-left.png');
+    background-position: -1.5rem 0;
+    background-size:auto;
+    margin-left: -10rem;
+    padding-left: 10rem;
+    height: 22.5rem;
+  }
+
+  .hero-image-right {
+    display: block;
+    background-image: url("../images/desktop/image-hero-right.png");
+    background-position: 4.6rem 100%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 22.5rem;
+    margin-right: -10rem;
+    padding-right: 10rem;
+  }
+
+  .hero-info {
+    gap: var(--spacing-400);
+  }
+
+  .hero-info p {
+    width: 37.1ch;
+  }
+}
